@@ -1,0 +1,8 @@
+Algorithm
+
+Input : radius of a circle
+Step 1: Start
+Step 2: Read radius 
+Step 3: Calculate area, area = 3.14*radius*radius
+Step 4: Print area
+Step 5: Stop
