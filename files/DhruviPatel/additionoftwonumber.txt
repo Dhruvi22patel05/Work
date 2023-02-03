@@ -5,6 +5,5 @@ Algorithm
     Step 3: Print Sum
     Step 5: Stop.
 
-Flowchart
 
     
