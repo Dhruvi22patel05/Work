@@ -1,0 +1,6 @@
+Algorithm
+
+Step 1:Create a variable named sum to keep the track of the sum of the numbers till now in the loop
+Step 2:Run a loop from i=1 to i=n
+Step 3: do sum = sum+i*2
+Step 4:Finally return the sum variable
