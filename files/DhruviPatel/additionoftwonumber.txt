@@ -1,0 +1,10 @@
+Algorithm
+
+    Step 1: Read A , B
+    Step 2: Let Sum= A+B
+    Step 3: Print Sum
+    Step 5: Stop.
+
+Flowchart
+
+    
