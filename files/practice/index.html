@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./dist/output.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <nav
+    class="relative flex w-full flex-wrap items-center justify-between bg-white py-3 text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start"
+    data-te-navbar-ref>
+    <div class="flex w-full flex-wrap items-center justify-between px-6">
+      <a class="pr-2 text-xl font-semibold text-white" href="#"><img src="img/logo.png" alt=""></a>
+      <button
+        class="block border-0 bg-transparent py-2 px-2.5 text-neutral-200 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+        type="button" data-te-collapse-init data-te-target="#navbarSupportedContent4"
+        aria-controls="navbarSupportedContent4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="[&>svg]:w-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+      </button>
+      <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+        id="navbarSupportedContent4" data-te-collapse-item>
+        <ul class="list-style-none ml-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+          <li class="pt-2 px-3" data-te-nav-item-ref>
+            <a class="text-black text-xs uppercase hover:text-primary-500 lg:px-2 [&.active]:text-black/90" href="#"
+              data-te-nav-link-ref>Home</a>
+          </li>
+          <div class="flex lg:justify-center px-3">
+            <div>
+              <div class="relative" data-te-dropdown-ref>
+                <a class="flex lg:items-center peer lg:px-3 uppercase pt-2.5 pb-2 text-xs hover:text-primary-500 text-black"
+                  href="#" type="button" id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  Blog
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden peer-hover:flex hover:flex
+                w-[200px] flex-col bg-white rounded-lg border-none shadow-lg px-3 text-left"
+                  aria-labelledby="dropdownMenuButton2" data-te-dropdown-menu-ref>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>1st Full Post + 2 cols Grid
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>1st Full Post + list
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>2 cols Grid Layout
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref> List Layout
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>3 cols Grid Layout
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Standard Blog Layout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex lg:justify-center px-3">
+            <div>
+              <div class="relative" data-te-dropdown-ref>
+                <a class="flex lg:items-center peer   uppercase pt-2.5 pb-2 text-xs hover:text-primary-500 text-black"
+                  href="#" type="button" id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  features
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden peer-hover:flex hover:flex
+                w-[200px] flex-col bg-white rounded-lg border-none shadow-lg px-3 text-left"
+                  aria-labelledby="dropdownMenuButton2" data-te-dropdown-menu-ref>
+                  <li>
+                    <a class="block  w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Headers <span class="float-right"><img src="img/rightarrow.png"
+                          class="inline-block h-3" alt=""></span>
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Sliders<span class="float-right"><img src="img/rightarrow.png"
+                          class="inline-block h-3" alt=""></span>
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Sidebars<span class="float-right"><img src="img/rightarrow.png"
+                          class="inline-block h-3" alt=""></span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex lg:justify-center px-3">
+            <div>
+              <div class="relative" data-te-dropdown-ref>
+                <a class="flex lg:items-center peer  lg:px-6 uppercase pt-2.5 pb-2 text-xs hover:text-primary-500 text-black"
+                  href="#" type="button" id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  categories
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden peer-hover:flex hover:flex
+                w-[200px] flex-col bg-white rounded-lg border-none shadow-lg px-3 text-left"
+                  aria-labelledby="dropdownMenuButton2" data-te-dropdown-menu-ref>
+                  <li>
+                    <a class="block  w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Lifestyle
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Travel
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Photo
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <li class="pt-1.5 px-3" data-te-nav-item-ref>
+            <a class="text-black text-xs uppercase hover:text-primary-500 lg:px-2 [&.active]:text-black/90" href="#"
+              data-te-nav-link-ref>about</a>
+          </li>
+
+          <li class="pt-1.5 px-3" data-te-nav-item-ref>
+            <a class="text-black text-xs uppercase hover:text-primary-500 lg:px-2 [&.active]:text-black/90" href="#"
+              data-te-nav-link-ref>Contact</a>
+          </li>
+
+          <div class="flex lg:justify-center px-3">
+            <div>
+              <div class="relative" data-te-dropdown-ref>
+                <a class="flex lg:items-center peer  lg:px-6 uppercase pt-2.5 pb-2 text-xs hover:text-primary-500 text-black"
+                  href="#" type="button" id="dropdownMenuButton2" data-te-dropdown-toggle-ref aria-expanded="false"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  shop
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden peer-hover:flex hover:flex
+                w-[200px] flex-col bg-white rounded-lg border-none shadow-lg px-3 text-left"
+                  aria-labelledby="dropdownMenuButton2" data-te-dropdown-menu-ref>
+                  <li>
+                    <a class="block  w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Cart
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs  text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>Checkout
+                      <hr class="mt-2">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="block w-full bg-transparent py-2 px-4 text-xs text-neutral-700 hover:bg-neutral-100"
+                      href="#" data-te-dropdown-item-ref>My Account
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <li class="pt-1.5 px-3" data-te-nav-item-ref>
+            <a class="text-black text-xs uppercase hover:text-primary-500 lg:px-2 [&.active]:text-black/90" href="#"
+              data-te-nav-link-ref>portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-primary-50">
+    <div class="container mx-auto">
+      <div class="md:grid md:grid-cols-3 grid-cols-1 lg:mx-auto hidden">
+        <div class="lg:mt-24 lg:ml-20">
+          <img src="img/s1-1.png" alt="">
+        </div>
+        <div class="lg:ml-14 mt-10">
+          <img src="img/s1-2.png" alt="">
+        </div>
+        <div class="lg:mt-24 lg:ml-10">
+          <img src="img/s1-3.png" alt="">
+        </div>
+      </div>
+
+      <div class="md:hidden relative mt-4" id="carouselExampleSlidesOnly" data-te-carousel-init data-te-carousel-slide>
+        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+          <div
+            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item data-te-carousel-active>
+            <img src="img/s1-1.png" class="block w-full" alt="Wild Landscape" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item>
+            <img src="img/s1-2.png" class="block w-full" alt="Camera" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item>
+            <img src="img/s1-3.png" class="block w-full" alt="Exotic Fruits" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col mx-auto pb-12">
+        <h3 class="italic uppercase mx-auto mt-3">Hey There</h3>
+        <h1 class="text-5xl mt-5 font-bold mx-auto text-gray-600">I'm Haus</h1>
+        <p class="mt-7 mx-auto text-center font-serif md:text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit.
+          Laudantium veniam veritatis beatae? Saepe unde natus voluptas consequuntur quos vitae eius ratione beatae
+          aperiam tempora, ullam rem. Blanditiis dignissimos ex ipsum minus sint sit. Repellat, rem? Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Iste rerum mollitia cum nihil, sed dignissimos voluptatem architecto
+          voluptatum aperiam deleniti accusamus ipsum fugiat officia sapiente?</p>
+        <button
+          class="uppercase mt-5 border-2 border-[#d0d0a7] text-sm hover:text-white hover:bg-[#d0d0a7] py-2 italic mx-auto w-64 px-3">read
+          the whole story</button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class=" bg-[#f2f2e6] pb-10">
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-3 grid-cols-1">
+
+        <div class="md:col-span-1 md:ml-auto mt-10 ml-10 md:border-r-2 border-gray-400 mr-3">
+          <img src="img/s2-i.png" alt="">
+        </div>
+        <div class="md:col-span-2">
+          <h1 class="mx-auto md:px-12 mt-20 text-4xl font-mono">Condimentum Magna Vel Sodales Mol Nisi Nibh Ornare Eros
+          </h1>
+          <div class="h-1 rounded md:ml-12 mt-4 w-24 bg-blue-600"></div>
+          <p class="tracking-widest md:ml-12 leading-loose mt-6">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Esse aperiam ipsum perspiciatis deserunt! Voluptatem nam beatae accusantium, vero exercitationem sequi
+            ad dolorum blanditiis ullam cumque.</p>
+          <button
+            class="uppercase italic px-10 ml-12 mt-4 border-2 border-[#d0d0a7] hover:bg-[#d0d0a7] hover:text-white py-2">get
+            started</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-gray-50">
+    <div class="container mx-auto pb-10 hidden md:block">
+      <div class="grid grid-cols-3">
+        <div class="flex flex-col mt-8 lg:ml-24">
+
+          <img src="img/s3-1.png" class=" w-72 relative hover:opacity-50 hover:grayscale" alt="">
+
+
+          <div>
+            <img src="img/s3-2.png" class=" w-72 relative hover:opacity-50 mt-20 hover:grayscale" alt="">
+
+          </div>
+        </div>
+
+        <div class="font-serif">
+          <h3 class="uppercase text-center  pt-28 lg:pt-52  text-xl">the portfolio</h3>
+          <p class="uppercase text-3xl font-bold mt-5  text-center ">view</p>
+          <p class="uppercase text-3xl font-bold mt-5  text-center">recent</p>
+          <p class="uppercase text-3xl font-bold mt-5 text-center">work</p>
+
+          <button
+            class="uppercase border-2 border-black text-center px-5 py-2 ml-36 w-32 hover:bg-slate-600 hover:text-white mt-5 md:hidden lg:block">explore</button>
+        </div>
+
+        <div class="flex flex-col mt-8 lg:ml-24">
+
+          <img src="img/s3-3.png" class=" w-72 relative hover:opacity-50 hover:grayscale" alt="">
+
+
+          <div>
+            <img src="img/s3-4.png" class=" w-72 relative hover:opacity-50 mt-20 hover:grayscale" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container  grid grid-cols-1 sm:hidden pb-10">
+      <div class="pl-14 ">
+        <h2 class="uppercase text-center mt-5 italic">the portfolio</h2>
+        <h2 class="uppercase text-center text-2xl  mt-5 italic">view recent work</h2>
+      </div>
+      <div class="relative w-[400px] ml-10 mt-4" id="carouselExampleSlidesOnly1" data-te-carousel-init
+        data-te-carousel-slide>
+        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+          <div
+            class="relative float-left -mr-[100%] w-full transition-transform duration-[200ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item data-te-carousel-active>
+            <img src="img/s3-1.png" class="block w-full" alt="" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item>
+            <img src="img/s3-2.png" class="block w-full" alt="" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item>
+            <img src="img/s3-3.png" class="block w-full" alt="" />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section class="bg-[#e7f2ed] pb-10">
+    <div class="container mx-auto">
+      <div class="md:grid md:grid-cols-2 grid-cols-1 hidden ">
+        <div class="md:ml-32 mt-16 md:border-r-2 border-gray-300 pr-2">
+          <h1 class="text-3xl">
+            Tools For Creatives
+          </h1>
+          <div class="h-1 rounded  mt-4 w-24 bg-blue-600"></div>
+          <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus ex inventore
+            quia ratione facere quas, dolor mollitia ut sit velit dolore aspernatur ea hic! Eaque nulla explicabo
+            corrupti placeat hic tenetur fugit facere pariatur.</p>
+        </div>
+
+        <div class="mt-10 md:ml-14">
+          <img src="img/s4-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:hidden ">
+        <div class="mt-10">
+          <img src="img/s4-1.png" alt="">
+        </div>
+        <div class=" mt-16 md:border-r-2 border-gray-300 pr-2">
+          <h1 class="text-3xl">
+            Tools For Creatives
+          </h1>
+          <div class="h-1 rounded  mt-4 w-24 bg-blue-600"></div>
+          <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus ex inventore
+            quia ratione facere quas, dolor mollitia ut sit velit dolore aspernatur ea hic! Eaque nulla explicabo
+            corrupti placeat hic tenetur fugit facere pariatur.</p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-gray-50 pb-20">
+    <div class="container mx-auto">
+      <div class="md:mx-20 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 pt-20">
+        <div class="border-2 border-gray-200 px-3 py-6 mt-10 hover:bg-[#e7f2ed] relative">
+          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium placeat nam
+            natus, asperiores illo beatae iure nulla odit quo nobis ratione fugiat quisquam. </p>
+          <div class="absolute left-28 md:left-24 lg:left-32">
+            <img src="img/s5-1.png" alt="" class="h-20 w-20  border-2 border-gray-200 p-2 rounded-full object-cover">
+
+
+          </div>
+        </div>
+        <div class="border-2 relative border-gray-200 mt-10 px-3 py-6 hover:bg-[#e7f2ed]">
+          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium placeat nam
+            natus, asperiores illo beatae iure nulla odit quo nobis ratione fugiat quisquam. </p>
+          <div class="absolute  left-28  md:left-24 lg:left-32">
+            <img src="img/s5-2.png" alt="" class="h-20 w-20  border-2 border-gray-200 p-2 rounded-full object-cover">
+
+          </div>
+        </div>
+        <div class="border-2 relative border-gray-200 mt-10 md:mt-10 px-3 py-6 hover:bg-[#e7f2ed]">
+          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium placeat nam
+            natus, asperiores illo beatae iure nulla odit quo nobis ratione fugiat quisquam. </p>
+          <div class="absolute  left-28 md:left-24 lg:left-32">
+            <img src="img/s5-3.png" alt="" class="h-20 w-20  border-2 border-gray-200 p-2 rounded-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="bg-[#e7f2ed] pb-10">
+    <div class="container mx-auto py-10">
+      <div id="carouselExampleControls" class="relative" data-te-carousel-init data-te-carousel-slide>
+        <div class="relative w-12/12 overflow-hidden">
+          <div
+            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none md:ml-20 lg:ml-10"
+            data-te-carousel-item data-te-carousel-active>
+            <img src="img/s5-1.png" class="inline-block w-auto  h-80" alt="" />
+            <img src="img/s5-2.png" class="lg:inline-block w-auto h-80 hidden " alt="" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none md:ml-20"
+            data-te-carousel-item>
+            <img src="img/s5-2.png" class="inline-block w-auto  h-80" alt="" />
+            <img src="img/s5-3.png" class="lg:inline-block w-auto h-80 hidden" alt="" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none md:ml-20"
+            data-te-carousel-item>
+            <img src="img/s5-3.png" class="inline-block w-auto  h-80" alt="" />
+            <img src="img/s6-1.png" class="lg:inline-block w-auto h-80 hidden" alt="">
+          </div>
+        </div>
+        <button
+          class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
+          type="button" data-te-target="#carouselExampleControls" data-te-slide="prev">
+          <span class="inline-block h-8 w-8">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg> -->
+            <img src="img/icons8-left-arrow-50.png" alt="">
+          </span>
+
+        </button>
+        <button
+          class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50"
+          type="button" data-te-target="#carouselExampleControls" data-te-slide="next">
+          <span class="inline-block h-8 w-8">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg> -->
+            <img src="img/icons8-right-arrow-50.png" alt="">
+          </span>
+          <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+        </button>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section class="bg-gray-50 pb-10">
+    <div class="container mx-auto">
+      <div class="flex">
+        <div class="flex flex-col md:ml-32 pt-10">
+          <p class="text-4xl">LifeStyle</p>
+          <a href="#lifestyle" class="h-1 rounded  mt-2 w-20  focus:w-32 inline-block bg-[#178a9c]"
+            data-te-collapse-init data-te-ripple-init data-te-ripple-color="light" role="button"></a>
+        </div>
+        <div class="flex flex-col ml-3 md:ml-32 pt-10">
+          <p class="text-4xl">Travel</p>
+          <a href="#travel" class="h-1 rounded  mt-2 w-20  focus:w-32 inline-block bg-[#a5a559]" data-te-collapse-init
+            data-te-ripple-init data-te-ripple-color="light" role="button"></a>
+        </div>
+        <div class="flex flex-col ml-3 md:ml-32 pt-10">
+          <p class="text-4xl">Photos</p>
+          <a href="#photo" class="h-1 rounded  mt-2 w-20  focus:w-32 inline-block bg-[#fbcaba]" data-te-collapse-init
+            data-te-ripple-init data-te-ripple-color="light" role="button"></a>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1" id="parent">
+        <div class="!visible hidden" id="photo" data-te-collapse-item data-te-collapse-show data-te-parent="#parent">
+          <div class="block rounded-lg bg-white border-2 border-[#fbcaba] md:w-10/12 mt-5 md:ml-36 p-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat error fuga, aliquid, facere
+            voluptatem architecto delectus dolorem eum consequuntur qui nobis, eaque ipsa veritatis aut incidunt? Illum,
+            ad? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias obcaecati voluptatibus,
+            repudiandae delectus quas esse!
+          </div>
+        </div>
+
+        <div class="!visible" id="lifestyle" data-te-collapse-item data-te-collapse-show data-te-parent="#parent">
+          <div class="block rounded-lg bg-white border-2 border-[#178a9c] md:w-10/12 mt-5 md:ml-36 p-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat error fuga, aliquid, facere
+            voluptatem architecto delectus dolorem eum consequuntur qui nobis, eaque ipsa veritatis aut incidunt? Illum,
+            ad? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias obcaecati voluptatibus,
+            repudiandae delectus quas esse!
+          </div>
+        </div>
+
+        <div class="!visible hidden" id="travel" data-te-collapse-item data-te-parent="#parent">
+          <div class="block rounded-lg bg-white border-2 border-[#a5a559] md:w-10/12 mt-5 md:ml-36 p-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat error fuga, aliquid, facere
+            voluptatem architecto delectus dolorem eum consequuntur qui nobis, eaque ipsa veritatis aut incidunt? Illum,
+            ad? Consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias obcaecati voluptatibus,
+            repudiandae delectus quas esse!
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-[#e7f2ed] pb-10">
+    <div class="container mx-auto">
+      <div class="flex justify-center pt-10">
+        <h1 class="text-bold text-3xl">Lets Collaborate Together</h1>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-sm pt-5 text-[#9c9e9d] ">
+        <div>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad accusantium maiores aliquid consequatur
+            nesciunt magnam magni laudantium itaque facere consectetur quae tenetur, quas cum ipsa placeat repellat
+            laborum, cumque, praesentium perferendis aliquam accusamus eveniet rem! Totam libero placeat nam. Sit sunt
+            exercitationem similique quasi!</P>
+        </div>
+        <div class="hidden md:block">
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad accusantium maiores aliquid consequatur
+            nesciunt magnam magni laudantium itaque facere consectetur quae tenetur, quas cum ipsa placeat repellat
+            laborum, cumque, praesentium perferendis aliquam accusamus eveniet rem! Totam libero placeat nam. Sit sunt
+            exercitationem similique quasi!</P>
+        </div>
+        <div class="hidden lg:block">
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad accusantium maiores aliquid consequatur
+            nesciunt magnam magni laudantium itaque facere consectetur quae tenetur, quas cum ipsa placeat repellat
+            laborum, cumque, praesentium perferendis aliquam accusamus eveniet rem! Totam libero placeat nam. Sit sunt
+            exercitationem similique quasi!</P>
+        </div>
+        <div class="hidden lg:block">
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad accusantium maiores aliquid consequatur
+            nesciunt magnam magni laudantium itaque facere consectetur quae tenetur, quas cum ipsa placeat repellat
+            laborum, cumque, praesentium perferendis aliquam accusamus eveniet rem! Totam libero placeat nam. Sit sunt
+            exercitationem similique quasi!</P>
+        </div>
+
+        <div class="md:hidden">
+          <button
+            class="italic text-bold p-3 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white ">Read
+            More</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-gray-50 pb-10">
+    <div class="container mx-auto">
+      <div class="flex justify-center pt-10">
+        <h1 class="text-3xl font-bold">Recent Posts </h1>
+      </div>
+      <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
+
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#e7f2ed]">
+            <a href="#!">
+              <img class="rounded-t-lg w-full" src="img/card.png" alt="" />
+            </a>
+            <div class="p-6 ">
+              <h5 class="mb-2 text-sm leading-tight text-center text-neutral-800 ">
+                Photo
+              </h5>
+              <p class="mb-2 text-sm text-center text-neutral-600 ">
+                Little Known Ways To Rid Yourself
+              </p>
+              <p class="mb-4 text-sm text-center text-neutral-600 ">
+                June 20, 2021
+              </p>
+              <p class="mb-4 text-xs text-center text-neutral-600 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ut a voluptatum magnam sunt vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui?
+              </p>
+              <button type="button"
+                class="inline-block italic text-bold ml-28 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white "
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#e7f2ed]">
+
+            <div class="p-6 ">
+              <h5 class="mb-2 text-sm leading-tight text-center text-neutral-800 ">
+                Photo
+              </h5>
+              <p class="mb-2 text-sm text-center text-neutral-600 ">
+                Little Known Ways To Rid Yourself
+              </p>
+              <p class="mb-4 text-sm text-center text-neutral-600 ">
+                June 20, 2021
+              </p>
+              <p class="mb-4 text-xs text-center text-neutral-600 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ut a voluptatum magnam sunt vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui?
+              </p>
+              <button type="button"
+                class="inline-block italic text-bold ml-28 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white "
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+            <a href="#!">
+              <img class="rounded-t-lg w-full" src="img/card.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#e7f2ed]">
+            <a href="#!">
+              <img class="rounded-t-lg w-full" src="img/card.png" alt="" />
+            </a>
+            <div class="p-6 ">
+              <h5 class="mb-2 text-sm leading-tight text-center text-neutral-800 ">
+                Photo
+              </h5>
+              <p class="mb-2 text-sm text-center text-neutral-600 ">
+                Little Known Ways To Rid Yourself
+              </p>
+              <p class="mb-4 text-sm text-center text-neutral-600 ">
+                June 20, 2021
+              </p>
+              <p class="mb-4 text-xs text-center text-neutral-600 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ut a voluptatum magnam sunt vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui?
+              </p>
+              <button type="button"
+                class="inline-block italic text-bold ml-28 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white "
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#e7f2ed]">
+
+            <h5 class="mb-2 mt-3 text-sm leading-tight text-center text-neutral-800 ">
+              Photo
+            </h5>
+            <p class="mb-2 text-sm text-center text-neutral-600 ">
+              Little Known Ways To Rid Yourself
+            </p>
+            <p class="mb-4 text-sm text-center text-neutral-600 ">
+              June 20, 2021
+            </p>
+
+            <a href="#!">
+              <img class="rounded-t-lg w-full" src="img/card.png" alt="" />
+            </a>
+            <div class="p-6">
+              <p class="mb-4 text-xs text-center text-neutral-600 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ut a voluptatum magnam sunt vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui?
+              </p>
+              <button type="button"
+                class="inline-block italic text-bold ml-28 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white "
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:flex justify-center md:hidden">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#e7f2ed]">
+
+            <h5 class="mb-2 mt-3 text-sm leading-tight text-center text-neutral-800 ">
+              Photo
+            </h5>
+            <p class="mb-2 text-sm text-center text-neutral-600 ">
+              Little Known Ways To Rid Yourself
+            </p>
+            <p class="mb-4 text-sm text-center text-neutral-600 ">
+              June 20, 2021
+            </p>
+
+            <a href="#!">
+              <img class="rounded-t-lg w-full" src="img/card.png" alt="" />
+            </a>
+            <div class="p-6">
+              <p class="mb-4 text-xs text-center text-neutral-600 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ut a voluptatum magnam sunt vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui?
+              </p>
+              <button type="button"
+                class="inline-block italic text-bold ml-28 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white "
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:flex justify-center md:hidden">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg hover:bg-[#e7f2ed]">
+
+            <h5 class="mb-2 mt-3 text-sm leading-tight text-center text-neutral-800 ">
+              Photo
+            </h5>
+            <p class="mb-2 text-sm text-center text-neutral-600 ">
+              Little Known Ways To Rid Yourself
+            </p>
+            <p class="mb-4 text-sm text-center text-neutral-600 ">
+              June 20, 2021
+            </p>
+
+            <a href="#!">
+              <img class="rounded-t-lg w-full" src="img/card.png" alt="" />
+            </a>
+            <div class="p-6">
+              <p class="mb-4 text-xs text-center text-neutral-600 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ut a voluptatum magnam sunt vero! Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui?
+              </p>
+              <button type="button"
+                class="inline-block italic text-bold ml-28 px-6 border-2 border-[#d0d0a7] text-black hover:bg-[#d0d0a7] hover:text-white "
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 mt-10 md:hidden">
+
+        <div class="mx-auto border-2 border-[#d0d0a7] w-full px-3 ">
+          <p class="text-sm uppercase">photo</p>
+          <p>Little Known Ways To Rid Yourself</p>
+          <p class="text-xs">June 20, 2021</p>
+        </div>
+        <div class="mx-auto border-2 border-[#d0d0a7] mt-5 w-full px-3">
+          <p class="text-sm uppercase">photo</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus molestiae.</p>
+          <p class="text-xs">June 20, 2021</p>
+        </div>
+        <div class="mx-auto border-2 border-[#d0d0a7] w-full mt-5 px-3 ">
+          <p class="text-sm uppercase">photo</p>
+          <p>Little Known Ways To Rid Yourself</p>
+          <p class="text-xs">June 20, 2021</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#e7f2ed]">
+    <div class="container mx-auto">
+      <div class="flex justify-center pt-10 pb-5">
+        <h1 class="font-bold text-4xl tracking-wider">Contact Us</h1>
+      </div>
+
+      <div class="md:grid grid-cols-2 gap-2 hidden">
+        <div class="block max-w-sm w-full rounded-lg bg-[#e7f2ed] p-6 lg:ml-56">
+          <form>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <input type="text"
+                class=" min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6]" id="name"
+                placeholder="First Name" />
+            </div>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <input type="text"
+                class=" min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6]" id="lname"
+                placeholder="Last Name" />
+            </div>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <input type="email"
+                class=" min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6]"
+                id="exampleInputEmail1" placeholder="Email" />
+            </div>
+            <p class="text-slate-500">Comments</p>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <textarea class=" min-h-[auto] w-full rounded border-0 py-[0.32rem] px-3 leading-[1.6] bg-[#e7f2ed]"
+                id="comment" rows="3"></textarea>
+            </div>
+
+
+            <button type="submit"
+              class="rounded bg-[#e7f2ed] px-6 py-2.5 text-xs font-medium uppercase leading-tight text-slate-500 border-2 border-gray-300"
+              data-te-ripple-init data-te-ripple-color="light">
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <p class="mt-5 text-slate-500">Upload file</p>
+          <div class="flex flex-col border-dashed border-2 lg:mr-48 border-gray-300 justify-center items-center py-20">
+            <span class="text-slate-400"><img src="img/icons8-upload-to-cloud-50.png" class="w-7 h-7" alt=""></span>
+            <p class="mt-3 text-slate-400">Drop Your Files here</p>
+            <p class="text-xs mt-3 text-slate-400">Or</p>
+            <button class="text-slate-400 border-2 border-gray-500 px-5">Browse file</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-2 md:hidden">
+        <div class="block max-w-sm w-full rounded-lg bg-[#e7f2ed] p-6 lg:ml-56">
+          <form>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <input type="text"
+                class=" min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6]" id="name"
+                placeholder="First Name" />
+            </div>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <input type="text"
+                class=" min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6]" id="lname"
+                placeholder="Last Name" />
+            </div>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <input type="email"
+                class=" min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6]"
+                id="exampleInputEmail1" placeholder="Email" />
+            </div>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <p class="mt-5 text-slate-500">Upload file</p>
+              <div
+                class="flex flex-col border-dashed border-2 lg:mr-48 border-gray-300 justify-center items-center py-20">
+                <span class="text-slate-400"><img src="img/icons8-upload-to-cloud-50.png" class="w-7 h-7" alt=""></span>
+                <p class="mt-3 text-slate-400">Drop Your Files here</p>
+                <p class="text-xs mt-3 text-slate-400">Or</p>
+                <button class="text-slate-400 border-2 border-gray-500 px-5">Browse file</button>
+              </div>
+            </div>
+            <p class="text-slate-500">Comments</p>
+            <div class="relative mb-5" data-te-input-wrapper-init>
+              <textarea
+                class=" min-h-[auto] w-full rounded border-2 border-gray-400 py-[0.32rem] px-3 leading-[1.6] bg-[#e7f2ed]"
+                id="comment" rows="3"></textarea>
+            </div>
+
+
+            <button type="submit"
+              class="rounded bg-[#e7f2ed] px-6 py-2.5 text-xs font-medium uppercase leading-tight text-slate-500 border-2 border-gray-300"
+              data-te-ripple-init data-te-ripple-color="light">
+              Submit
+            </button>
+          </form>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-gray-50 pb-12">
+
+    <div class="container mx-auto">
+      <div class="flex justify-center py-10">
+        <h1 class="text-4xl font-bold">
+          FAQ
+        </h1>
+      </div>
+
+      <div id="accordionExample" class="w-full md:px-56">
+        <div class="rounded-t-lg border border-primary-300 bg-white">
+          <h2 class="mb-0" id="headingOne">
+            <button
+              class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white py-4 px-5 text-left text-base text-neutral-800"
+              type="button" data-te-collapse-init data-te-target="#collapseOne" aria-controls="collapseOne">
+              Lorem ipsum dolor sit amet.
+              <span
+                class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne"
+            data-te-parent="#accordionExample">
+            <div class="py-4 px-5">
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt labore quos iure atque doloribus
+                error, expedita, pariatur vitae magni dignissimos dicta eos laborum distinctio fuga nulla iste hic rerum
+                consectetur consequuntur earum recusandae blanditiis quas!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-t-lg border border-primary-300 bg-white mt-3">
+          <h2 class="mb-0" id="headingOne">
+            <button
+              class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white py-4 px-5 text-left text-base text-neutral-800"
+              type="button" data-te-collapse-init data-te-target="#collapse2" aria-controls="collapseOne">
+              Lorem ipsum dolor sit amet.
+              <span
+                class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapse2" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne"
+            data-te-parent="#accordionExample">
+            <div class="py-4 px-5">
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt labore quos iure atque doloribus
+                error, expedita, pariatur vitae magni dignissimos dicta eos laborum distinctio fuga nulla iste hic rerum
+                consectetur consequuntur earum recusandae blanditiis quas!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-t-lg border border-primary-300 bg-white mt-3">
+          <h2 class="mb-0" id="headingOne">
+            <button
+              class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white py-4 px-5 text-left text-base text-neutral-800"
+              type="button" data-te-collapse-init data-te-target="#collapse3" aria-controls="collapseOne">
+              Lorem ipsum dolor sit amet.
+              <span
+                class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div id="collapse3" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne"
+            data-te-parent="#accordionExample">
+            <div class="py-4 px-5">
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt labore quos iure atque doloribus
+                error, expedita, pariatur vitae magni dignissimos dicta eos laborum distinctio fuga nulla iste hic rerum
+                consectetur consequuntur earum recusandae blanditiis quas!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-gray-50 text-center text-neutral-600 lg:text-left">
+    <div
+      class="flex items-center flex-col lg:flex-row justify-center border-b-2 border-neutral-200 p-6  lg:justify-between">
+      <div class="mr-12 hidden lg:block">
+        <span><img src="img/icons8-copyright-all-rights-reserved-24.png" class="inline w-4 h-4" alt=""> 2022 Haus Gitschberg | Terms & Conditions | Privacy Policy</span>
+      </div>
+      <div class="flex justify-center">
+        <a href="#!" class="mr-6 text-neutral-600">
+          <img src="img/icons8-facebook-f-48.png" class="h-4 w-4" alt="">
+        </a>
+        <a href="#!" class="mr-6 text-neutral-600">
+          <img src="img/icons8-twitter-48.png" class="h-4 w-4" alt="">
+        </a>
+        <a href="#!" class="mr-6 text-neutral-600">
+          <img src="img/icons8-instagram-48.png" class="h-4 w-4" alt="">
+        </a>
+        <a href="#!" class="mr-6 text-neutral-600">
+          <img src="img/icons8-pinterest-p-48.png" class="h-4 w-4" alt="">
+        </a>
+        <a href="#!" class="mr-6 text-neutral-600">
+          <img src="img/icons8-youtube-48.png" class="h-4 w-4" alt="">
+        </a>
+      </div>
+      <div class="mr-12 ml-10 md:hidden block mt-5 text-sm">
+        <span class="text-center">Terms & Conditions | Privacy Policy</span>
+        <span class="block"><img src="img/icons8-copyright-all-rights-reserved-24.png" class="inline w-4 h-4" alt="">2022 Haus Gitschberg</span>
+      </div>
+      <div class="mr-12 ml-10 hidden  md:block lg:hidden mt-5 text-sm">
+        
+        <span><img src="img/icons8-copyright-all-rights-reserved-24.png" class="inline w-4 h-4" alt="">2022 Haus Gitschberg |</span>
+        <span class="text-center">Terms & Conditions | Privacy Policy</span>
+      </div>
+    </div>
+   
+    
+  </footer>
+
+
+
+  <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
