@@ -1,28 +1,38 @@
 // Sample product data
 const products = [
-  { id: 1, name: "Product 1", price: 10 },
-  { id: 2, name: "Product 2", price: 20 },
-  { id: 3, name: "Product 3", price: 30 },
+  { id: 1, name: "Product 1", price: 100 },
+  { id: 2, name: "Product 2", price: 200 },
+  { id: 3, name: "Product 3", price: 300 },
 ];
 
 // Display products in grid format
 const productsContainer = document.getElementById("products-container");
 for (const product of products) {
-  const productDiv = document.createElement("div");
-  productDiv.innerHTML = `
-    <h3>${product.name}</h3>
-    <p>${product.price} USD</p>
-    <button onclick="addToCart(${product.id})">Add to Cart</button>
-    <button onclick="removeToCart(${product.id})">Remove From Cart</button>
+  
 
-  `;
+  const productDiv = document.createElement("div");
+  productDiv.setAttribute("class","col-4");
+  productDiv.innerHTML = `
+ 
+  <div class="card ms-3" style="width: 25rem;">
+  <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">`+product.name+`</h5>
+    <h5 class="card-title">`+product.price+`Rs</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolores.</p>
+    <button class="btn btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
+    <button class="btn btn-primary" onclick="removeToCart(${product.id})">Remove From Cart</button>
+  </div>
+</div>`
+
+  
   productsContainer.appendChild(productDiv);
 }
 
-// Add product to cart and store in local storage
+
 function addToCart(productId) {
   const product = products.find((p) => p.id === productId);
-  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  let cartItems = JSON.parse(localStorage.getItem(productId)) || [];
   const productInCart = cartItems.find(product => product.id === productId);
   if (productInCart) {
     alert('Product already in cart!');
@@ -30,25 +40,31 @@ function addToCart(productId) {
   }
   else{
     cartItems.push(product);
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    localStorage.setItem(productId, JSON.stringify(cartItems));
+    alert("Added Succesfully")
   }
  
 }
 
 // Display cart summary in console
 function displayCartSummary() {
-  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   console.log("Cart Summary:");
+for (let i=0; i < localStorage.length; i++){
+  var KeyName = window.localStorage.key(i);
+  const cartItems = JSON.parse(localStorage.getItem(KeyName)) || [];
+
+
+  
   for (const item of cartItems) {
-    console.log(`${item.name} - ${item.price} USD`);
+    console.log(`${item.name} - ${item.price} Rs`);
   }
 }
+}
+
 
 function removeToCart(productId){
 
-  let cartItems = JSON.parse(localStorage.getItem("cartItems"));
-  const productInCart = cartItems.find(product => product.id === productId);
-  localStorage.removeItem("cartItems");
+  localStorage.removeItem(productId);
   alert("remove succesfully");
 
 }
