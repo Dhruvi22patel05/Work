@@ -1,11 +1,10 @@
-// Sample product data
-const products = [
+
+const products =[
   { id: 1, name: "Product 1", price: 100 },
   { id: 2, name: "Product 2", price: 200 },
   { id: 3, name: "Product 3", price: 300 },
 ];
 
-// Display products in grid format
 const productsContainer = document.getElementById("products-container");
 for (const product of products) {
   
@@ -33,29 +32,18 @@ for (const product of products) {
 function addToCart(productId) {
   const product = products.find((p) => p.id === productId);
   let cartItems = JSON.parse(localStorage.getItem(productId)) || [];
-  const productInCart = cartItems.find(product => product.id === productId);
-  if (productInCart) {
-    alert('Product already in cart!');
-    return;
-  }
-  else{
     cartItems.push(product);
     localStorage.setItem(productId, JSON.stringify(cartItems));
-    alert("Added Succesfully")
-  }
+    alert("Added Succesfully");
  
 }
 
-// Display cart summary in console
 function displayCartSummary() {
   console.log("Cart Summary:");
 for (let i=0; i < localStorage.length; i++){
   var KeyName = window.localStorage.key(i);
   const cartItems = JSON.parse(localStorage.getItem(KeyName)) || [];
-
-
-  
-  for (const item of cartItems) {
+for (const item of cartItems) {
     console.log(`${item.name} - ${item.price} Rs`);
   }
 }
