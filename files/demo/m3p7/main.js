@@ -10,7 +10,7 @@ for (const product of products) {
   
 
   const productDiv = document.createElement("div");
-  productDiv.setAttribute("class","col-4");
+  productDiv.setAttribute("class","col-sm-12 col-md-6 col-lg-4");
   productDiv.innerHTML = `
  
   <div class="card ms-3" style="width: 25rem;">
