@@ -16,9 +16,15 @@
 <body>
 
     <div class="container-fluid mt-5">
-        <a href="./index.html"> <button class="btn btn-success mb-5" id="applicant">Application</button></a>
+        <div class="d-flex">
+            <a href="./index.html"> <button class="btn btn-success mb-5" id="applicant">Application</button></a>
+            <a href="./admin.html"> <button class="btn btn-success px-4 ms-2" id="back1" style="display:none">Back</button></a>
+        </div>
+       
+     
 
-        <div>
+
+        <div id="addvacancyform">
             <form class="d-flex gap-5">
 
                 <div class="col">
@@ -47,7 +53,7 @@
             </form>
         </div>
 
-        <div class="mt-5 ms-5">
+        <div class="mt-5 ms-5" id="selectjoblist">
             <div class="row mb-3">
                 <label class="mb-3">Applications</label>
                 <div class="col-4">
@@ -65,6 +71,48 @@
         <div id="table">
             
         </div>
+        <div class="container mt-5 " id="jobschedule" style="display:none">
+            <div class="mt-5" >
+                <div class="row">
+                    <h3>New Scheduled job</h3>
+                </div>
+                <div class="row border mb-5">
+                    <div class="col-12 bg-light border pt-2  ">
+                        <h6>Job Details</h6>
+                    </div>
+                    <div class="col-12 w-50 mx-auto mt-5">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">FullName</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="" disabled>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="" disabled>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Job Field</label>
+                            <input type="text" class="form-control" id="jobfield" placeholder="" disabled>
+                          </div>
+                    </div>
+                    <div class="col-12 mb-2 ">
+                        <div class="row  mx-auto w-50">
+                            <div class="col">
+                              <input type="date" class="form-control" placeholder="Date" id="scheduledate" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Time       AM/PM"  id="scheduletime" aria-label="Last name">
+                            </div>
+                          </div>
+
+                    </div>
+                    <div class="col-12 w-25 mx-auto ps-5 mt-3 mb-5">
+                        <button class="btn btn-secondary ms-5 mt-3" type="button" id="ischedule">Schedule</button>
+                    </div>
+                </div>
+                
+        </div>
+        </div>
+        
     </div>
 
     <script type="module" src="./src/hr.js"></script>

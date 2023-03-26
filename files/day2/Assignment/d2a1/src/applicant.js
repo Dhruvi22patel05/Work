@@ -5,14 +5,31 @@ export function applicant() {
         i.addEventListener("click", (e) => {
             doc1('main').style.display = "block";
             doc1('vacancy').style.display = "none";
+            doc1('loginbutton').style.display = "none";
+            doc1('back').style.display = "inline";
             let value = e.target.value;
             let arr = value.split(":");
-            console.log(vacancies);
             let data = vacancies[(arr[1] - 1)];
             console.log(data);
             document.getElementById("position").value = data.vacancy_name;
         });
     }
+}
+export function process() {
+    let btnprocess = document.querySelectorAll(".process");
+    for (let j of btnprocess) {
+        j.addEventListener("click", () => {
+            doc1('vacancy').style.display = "none";
+            doc1('interviewprocess').style.display = "block";
+            doc1('back').style.display = "inline";
+        });
+    }
+    doc1('back').addEventListener("click", () => {
+        doc1('vacancy').style.display = "flex";
+        doc1('interviewprocess').style.display = "none";
+        doc1('back').style.display = "none";
+        doc1('main').style.display = "none";
+    });
 }
 export class Applicant1 {
     applyJob1() {

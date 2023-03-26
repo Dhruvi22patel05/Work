@@ -22,6 +22,8 @@ export class Vacancy {
         let tbl: any = "";
         let local: any = localStorage.getItem("vacancy")
         let vacancies = JSON.parse(local)
+        console.log(vacancies);
+        
         for (let i of vacancies) {
             // console.log(i);
 
@@ -33,6 +35,7 @@ export class Vacancy {
             <p class="card-text">${i.description}</p>
             <p class="card-text"> Total Vacancy : ${i.Total_Number}</p>
             <a href="#"><button class="btn btn-primary apply" value="btn:${i.vacancy_id}">Apply</button></a>
+            <a href="#"><button class="btn btn-primary process" value="btn:${i.vacancy_id}">See Process</button></a>
             </div>
             </div>`
 
